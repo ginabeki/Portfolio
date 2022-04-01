@@ -1,0 +1,22 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass SASS/main.scss CSS/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ginabeki/Portfolio.git"
+  },
+  "author": "Gina",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ginabeki/Portfolio/issues"
+  },
+  "homepage": "https://github.com/ginabeki/Portfolio#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1"
+  }
+}
