@@ -84,25 +84,32 @@ section.home {
 
 .text-1 {
   font-size: 1.6rem;
+  padding-top: 20px;
 }
 .text-2 {
   font-size: 4.6rem;
   font-weight: bold;
   margin-left: -3px;
+  padding-top: 20px;
 }
 .text-3 {
   font-size: 2.5rem;
   margin: 5px 0;
+  padding-top: 20px;
 }
 .text-3 span {
   color: #fcac2f;
 }
-
+.btn-1 {
+  padding-top: 20px;
+}
 .about-me-content {
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .image img {
-  margin: 10px 20px;
+  margin: 10px 30px;
   height: 400px;
   width: 400px;
   border-radius: 50%;
@@ -113,6 +120,153 @@ section.home {
   line-height: 1.7;
   font-size: 1.2rem;
   font-family: "Open Sans", sans-serif;
+}
+#projects {
+  background-color: #001427;
+}
+div.project-tile {
+  height: auto;
+  //   max-height: 120px;
+  //   border: 10px solid #fcac2f;
+  display: flex;
+  overflow-x: auto;
+  padding-bottom: 50px;
+}
+div.project-tile::-webkit-scrollbar {
+  width: 0;
+}
+div.item {
+  box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.9), 0 8px 20px 0 rgba(0, 0, 0, 0.3);
+  text-align: center;
+  margin: 0 10px;
+}
+
+.projects {
+  color: #fff;
+}
+.screenshot img {
+  height: 300px;
+}
+
+// Contact me section styling
+form {
+  margin: 0 20px;
+}
+.contact-content {
+  display: flex;
+}
+
+.contact .contact-content .column {
+  width: calc(50% - 30px);
+}
+.contact .contact-content .text {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  margin-left: 20px;
+}
+.contact .contact-content .left p {
+  text-align: justify;
+  color: #001427;
+  margin: 0 20px;
+  font-size: 1.2rem;
+}
+.contact .contact-content .left .icons {
+  margin: 10px 0;
+}
+.contact .contact-content .row {
+  display: flex;
+  height: 60px;
+  align-items: center;
+  margin-left: 30px;
+}
+.contact .contact-content .row .info {
+  margin-left: 30px;
+}
+.contact .contact-content .row i {
+  font-size: 1.5rem;
+  color: #fcac2f;
+}
+.contact .contact-content .info .head {
+  font-weight: 500;
+  color: #001427;
+}
+.contact .contact-content .info .sub-title {
+  color: #808080;
+}
+.contact .right form .fields {
+  display: flex;
+}
+.contact .right form .field,
+.contact .right form .fields .field {
+  height: 45px;
+  width: 100%;
+  margin-bottom: 15px;
+}
+.contact .right form .textarea {
+  height: 80px;
+  width: 100%;
+}
+.contact .right form .name {
+  margin-right: 10px;
+}
+.contact .right form .field input,
+.contact .right form .textarea textarea {
+  height: 100%;
+  width: 100%;
+  border: 1px solid lightgrey;
+  border-radius: 6px;
+  outline: none;
+  padding: 0 15px;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+}
+.contact .right form .field input:focus,
+.contact .right form .textarea textarea:focus {
+  border-color: #b3b3b3;
+}
+.contact .right form .textarea textarea {
+  padding-top: 10px;
+  resize: none;
+}
+.contact .right form .button-area {
+  //   display: flex;
+  align-items: center;
+  padding: 20px;
+}
+.links {
+  //   text-align: center;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.contact-details {
+  text-decoration: none;
+  color: #001427;
+  font-size: 1.2rem;
+  margin-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  transition: transform 0.3s ease-out;
+}
+.contact-details:hover {
+  transform: translateY(8px);
+}
+
+/* footer section styling */
+footer {
+  background: #001427;
+  padding: 15px 23px;
+  color: #fff;
+  text-align: center;
+}
+footer span a {
+  color: #fcac2f;
+  text-decoration: none;
+}
+footer span a:hover {
+  text-decoration: underline;
 }
 @media (max-width: 952px) {
   section.home {
@@ -146,6 +300,12 @@ section.home {
     height: 350px;
     width: 350px;
   }
+  .contact-content {
+    flex-direction: column;
+  }
+  .contact .contact-content .column {
+    width: 100%;
+  }
 }
 @media (max-width: 858px) {
   .checkbtn {
@@ -176,14 +336,17 @@ section.home {
   }
   .text-1 {
     font-size: 1.4rem;
+    padding-top: 20px;
   }
   .text-2 {
     font-size: 4.1rem;
     font-weight: bold;
     margin-left: -3px;
+    padding-top: 20px;
   }
   .text-3 {
     font-size: 2.1rem;
     margin: 5px 0;
+    padding-top: 20px;
   }
 }
